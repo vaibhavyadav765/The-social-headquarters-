@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Social Headquarters | Best Cafe in Vrindavan Colony, Lucknow</title>
+    <meta name="description" content="Welcome to The Social Headquarters in Lucknow. Experience the best coffee, snacks, and vibes. Affordable hangout for friends and family in Vrindavan Colony.">
+    <meta name="keywords" content="The Social Headquarters, Cafe in Lucknow, Vrindavan Colony Cafe, Coffee Shop Lucknow, TSH Momos, Best Cafe Lucknow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="The Social Headquarters - Where Taste Meets Vibes">
+    <meta property="og:description" content="Cozy hangout with delicious food and premium coffee in Lucknow. Visit us today!">
+    <meta property="og:image" content="https://r2-bucket.flowith.net/f/84bd09fd5905e9df/social_headquarters_cafe_interior_index_0%404096x2286.jpeg">
+    <meta property="og:type" content="website">
+
+    <!-- CDNs -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#F5F5DC] font-['Poppins'] text-[#4B2C20]">
+
+    <!-- Header -->
+    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-['Playfair_Display'] font-bold tracking-tight">The Social Headquarters</a>
+            
+            <!-- Desktop Nav -->
+            <div class="hidden lg:flex items-center space-x-8">
+                <a href="#home" class="hover:text-[#6F4E37] transition">Home</a>
+                <a href="#about" class="hover:text-[#6F4E37] transition">About</a>
+                <a href="#menu" class="hover:text-[#6F4E37] transition">Menu</a>
+                <a href="#gallery" class="hover:text-[#6F4E37] transition">Gallery</a>
+                <a href="#contact" class="hover:text-[#6F4E37] transition">Contact</a>
+                <a href="tel:09236072255" class="bg-[#4B2C20] text-white px-6 py-2 rounded-full hover:bg-[#6F4E37] transition flex items-center gap-2">
+                    <i data-lucide="phone" class="w-4 h-4"></i> Call Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menu-toggle" class="lg:hidden">
+                <i data-lucide="menu" class="w-8 h-8"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div id="mobile-menu" class="fixed inset-0 bg-[#F5F5DC] z-50 flex flex-col items-center justify-center space-y-8 text-2xl hidden translate-x-full transition-transform duration-300">
+            <button id="menu-close" class="absolute top-6 right-6">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#menu" class="nav-link">Menu</a>
+            <a href="#reviews" class="nav-link">Reviews</a>
+            <a href="#book" class="nav-link">Book Table</a>
+            <a href="tel:09236072255" class="bg-[#4B2C20] text-white px-8 py-3 rounded-full">Call Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center text-center text-white pt-16">
+        <div class="absolute inset-0 z-0">
+            <img src="https://r2-bucket.flowith.net/f/84bd09fd5905e9df/social_headquarters_cafe_interior_index_0%404096x2286.jpeg" alt="Cafe Interior" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/50"></div>
+        </div>
+        
+        <div class="relative z-10 container mx-auto px-6 max-w-4xl">
+            <span class="inline-block bg-[#D2B48C]/20 backdrop-blur-md px-4 py-1 rounded-full mb-4 text-sm font-medium tracking-widest uppercase">Lucknow's Favorite Spot</span>
+            <h1 class="text-5xl md:text-7xl font-['Playfair_Display'] font-bold mb-6 leading-tight">Welcome to The Social Headquarters</h1>
+            <p class="text-xl md:text-2xl mb-8 opacity-90 font-light">Where Taste Meets Vibes</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <div class="flex items-center gap-1 text-[#D2B48C]">
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star-half" class="fill-current w-5 h-5"></i>
+                </div>
+                <span class="text-white/80">4.7 ⭐ | 269 Reviews</span>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#book" class="bg-[#D2B48C] text-[#4B2C20] px-8 py-4 rounded-full font-bold hover:bg-white transition-all transform hover:scale-105">Book a Table</a>
+                <a href="tel:09236072255" class="border-2 border-white px-8 py-4 rounded-full font-bold hover:bg-white hover:text-[#4B2C20] transition-all transform hover:scale-105">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h2 class="text-4xl font-['Playfair_Display'] font-bold">A Space Built for Conversations</h2>
+                    <p class="text-lg text-[#6F4E37] leading-relaxed">
+                        The Social Headquarters is more than just a cafe; it's a community hub in the heart of Vrindavan Colony. Designed with a blend of modern aesthetics and cozy warmth, we provide the perfect backdrop for long conversations, remote work, or joyful family gatherings.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle" class="text-[#D2B48C]"></i>
+                            <span>Affordable pricing (₹1–200 per person)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="coffee" class="text-[#D2B48C]"></i>
+                            <span>Premium Arabica Blends & Refreshing Beverages</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="users" class="text-[#D2B48C]"></i>
+                            <span>Friendly Atmosphere for Friends & Family</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://r2-bucket.flowith.net/f/78ee7fdefcf9d3db/tsh_special_momos_peri_peri_fries_food_photography_index_2%402048x2048.jpeg" alt="Signature Food" class="rounded-2xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-[#4B2C20] text-white p-6 rounded-xl hidden lg:block">
+                        <p class="text-3xl font-bold italic">"Best Momos in Lucknow"</p>
+                        <p class="text-sm opacity-70">- Local Foodie Review</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-24 bg-[#F5F5DC]/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-4">Our Signature Menu</h2>
+                <div class="flex justify-center gap-4 mb-8 overflow-x-auto pb-2" id="menu-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="coffee">Coffee</button>
+                    <button class="filter-btn" data-category="beverages">Beverages</button>
+                    <button class="filter-btn" data-category="snacks">Snacks</button>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8" id="menu-container">
+                <!-- Menu Items will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="book" class="py-24 bg-white relative overflow-hidden">
+        <div class="container mx-auto px-6 max-w-4xl relative z-10">
+            <div class="bg-[#4B2C20] text-white rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="text-center mb-10">
+                    <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-2">Reserve Your Table</h2>
+                    <p class="opacity-70">Experience the vibe, we'll save you a seat.</p>
+                </div>
+                <form id="booking-form" class="grid md:grid-cols-2 gap-6">
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block text-sm mb-2 opacity-80">Full Name</label>
+                        <input type="text" name="name" required class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#D2B48C]">
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block text-sm mb-2 opacity-80">Phone Number</label>
+                        <input type="tel" name="phone" required class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#D2B48C]">
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-2 opacity-80">Guests</label>
+                        <select name="guests" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#D2B48C]">
+                            <option value="1">1 Person</option>
+                            <option value="2" selected>2 Persons</option>
+                            <option value="4">4 Persons</option>
+                            <option value="6">6+ Persons</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-2 opacity-80">Date</label>
+                        <input type="date" name="date" required class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#D2B48C]">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm mb-2 opacity-80">Special Requests</label>
+                        <textarea name="requests" rows="3" class="w-full bg-white/10 border border-white/20 rounded-lg px-4 py-3 focus:outline-none focus:border-[#D2B48C]"></textarea>
+                    </div>
+                    <div class="col-span-2">
+                        <button type="submit" class="w-full bg-[#D2B48C] text-[#4B2C20] font-bold py-4 rounded-lg hover:bg-white transition-all duration-300">Confirm Reservation</button>
+                    </div>
+                </form>
+                <div id="booking-success" class="hidden text-center mt-6 p-4 bg-green-500/20 rounded-lg border border-green-500/40">
+                    <p class="font-bold">Reservation Sent! We'll call you to confirm.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-['Playfair_Display'] font-bold text-center mb-12">Capture the Moments</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-xl h-64">
+                    <img src="https://r2-bucket.flowith.net/f/84bd09fd5905e9df/social_headquarters_cafe_interior_index_0%404096x2286.jpeg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer gallery-item" alt="Interior">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64 md:row-span-2 md:h-full">
+                    <img src="https://r2-bucket.flowith.net/f/78ee7fdefcf9d3db/tsh_special_momos_peri_peri_fries_food_photography_index_2%402048x2048.jpeg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer gallery-item" alt="Food">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64">
+                    <img src="https://r2-bucket.flowith.net/f/fe173e96053ce280/cafe_frappe_virgin_mojito_photography_index_1%402048x2048.jpeg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer gallery-item" alt="Drinks">
+                </div>
+                <div class="overflow-hidden rounded-xl h-64">
+                    <img src="https://r2-bucket.flowith.net/f/84bd09fd5905e9df/social_headquarters_cafe_interior_index_0%404096x2286.jpeg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer gallery-item" alt="Vibe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="py-24 bg-[#4B2C20] text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div>
+                    <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-8">Visit Us Today</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="map-pin" class="text-[#D2B48C] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Location</h4>
+                                <p class="opacity-70">Vrindavan Colony, Lucknow,<br>Uttar Pradesh 226029</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="clock" class="text-[#D2B48C] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Opening Hours</h4>
+                                <p class="opacity-70">Mon - Sun: 11:30 AM - 11:00 PM</p>
+                                <span class="inline-block mt-2 px-3 py-1 bg-green-500/20 text-green-400 text-xs rounded-full">Open Now</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <i data-lucide="phone" class="text-[#D2B48C] w-6 h-6 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">Contact</h4>
+                                <a href="tel:09236072255" class="opacity-70 hover:text-white transition">092360 72255</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[400px] rounded-3xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition duration-700">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3561.737151245781!2d80.932824!3d26.7845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd0000000001%3A0x0!2zMjbCsDQ3JzA0LjIiTiA4MMKwNTUnNTguMiJF!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="font-['Playfair_Display'] text-3xl font-bold mb-6">The Social Headquarters</h3>
+            <div class="flex justify-center gap-6 mb-8">
+                <a href="#" class="hover:text-[#D2B48C] transition"><i data-lucide="instagram"></i></a>
+                <a href="#" class="hover:text-[#D2B48C] transition"><i data-lucide="facebook"></i></a>
+                <a href="#" class="hover:text-[#D2B48C] transition"><i data-lucide="twitter"></i></a>
+            </div>
+            <p class="text-sm opacity-50">&copy; 2026 The Social Headquarters. Serving Vibes & Flavors in Lucknow.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919236072255" target="_blank" class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-40 hover:scale-110 transition transform">
+        <i data-lucide="message-circle" class="w-8 h-8"></i>
+    </a>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
